@@ -1,0 +1,12 @@
+﻿
+<div>
+    <b>That's the final step for the Order with Id: @ViewBag.OrderId</b>
+    <br /><br />
+    @using (Html.BeginForm("SubmitOrder", "FinishOrder")) {
+        <input type="submit" value="Submit Order" />
+    }
+
+    @using (Html.BeginForm("CancelOrder", "FinishOrder")) {
+        <input type="submit" value="Cancel Order" />
+    }
+</div>

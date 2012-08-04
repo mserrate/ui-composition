@@ -1,0 +1,18 @@
+﻿
+<h2>FinalStep</h2>
+
+<div id="finalStep">
+    <div class="shipping">
+    <h2>That's from Shipping BC/Service</h2>
+    <hr />
+    @Html.Action("ShippingAddress", "ShippingOrder")
+    </div>
+
+
+
+    <div class="sales">
+    <h2>That's from Sales BC/Service</h2>
+    <hr />
+    @Html.Action("SubmitOrCancel", "FinishOrder")
+    </div>
+</div>
